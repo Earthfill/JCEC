@@ -1,9 +1,11 @@
 const InputField = () => {
   return (
     <div className="inputfield">
-      <p>Step 1/5</p>
-      <h2>Let&apos;s start with your name</h2>
-      <p>Please fill in the details below</p>
+      <div className="inputfield--header">
+        <p>Step 1/5</p>
+        <h2>Let&apos;s start with your name</h2>
+        <p>Please fill in the details below</p>
+      </div>
       <hr />
       <form className="form">
         <p>Enter your name</p>
