@@ -1,9 +1,11 @@
-import Name from "./Name"
+import Field from "./Field"
+import Vertical from "./Vertical"
 
 const Body = () => {
   return (
-    <div>
-      <Name />
+    <div className="body--sep">
+      <Field />
+      <Vertical />
     </div>
   )
 }

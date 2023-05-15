@@ -1,6 +1,6 @@
 import { Person2Outlined, RadioButtonCheckedOutlined } from "@mui/icons-material"
 
-const Name = () => {
+const Field = () => {
   return (
     <div>
       <div className="field">
@@ -13,4 +13,4 @@ const Name = () => {
   )
 }
 
-export default Name
+export default Field
