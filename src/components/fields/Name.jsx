@@ -1,4 +1,4 @@
-import { Person2Outlined, RadioButtonCheckedOutlined } from "@mui/icons-material"
+import { Person2Outlined, RadioButtonUncheckedOutlined } from "@mui/icons-material"
 
 const Name = () => {
   return (
@@ -7,8 +7,8 @@ const Name = () => {
         <h4>Your Name</h4>
         <p>First, middle & Last name</p>
       </div>
-      <Person2Outlined className="icon"/>
-      <RadioButtonCheckedOutlined className="button--icon"/>
+      <Person2Outlined className="name--icon"/>
+      <RadioButtonUncheckedOutlined className="name--button--icon" fontSize="small"/>
     </div>
   )
 }

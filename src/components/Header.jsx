@@ -1,8 +1,10 @@
 const Header = () => {
   return (
     <div className="header">
-      <h2>My Skill Level</h2>
-      <p>Answer the following questions to begin your plan</p>
+      <div className="header--header">
+        <h1>My Skill Level</h1>
+        <p>Answer the following questions to begin your plan</p>
+      </div>
       <hr />
     </div>
   )

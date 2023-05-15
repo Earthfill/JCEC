@@ -1,4 +1,4 @@
-import { PhoneInTalkOutlined, RadioButtonCheckedOutlined } from "@mui/icons-material"
+import { PhoneInTalkOutlined, RadioButtonUncheckedOutlined } from "@mui/icons-material"
 
 const Telephone = () => {
   return (
@@ -8,7 +8,7 @@ const Telephone = () => {
         <p><strong>Number</strong></p>
       </div>
       <PhoneInTalkOutlined className="icon"/>
-      <RadioButtonCheckedOutlined className="button--icon"/>
+      <RadioButtonUncheckedOutlined className="button--icon" fontSize="small"/>
     </div>
   )
 }

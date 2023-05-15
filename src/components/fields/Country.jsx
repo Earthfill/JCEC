@@ -1,4 +1,4 @@
-import { PublicOutlined, RadioButtonCheckedOutlined } from "@mui/icons-material"
+import { PublicOutlined, RadioButtonUncheckedOutlined } from "@mui/icons-material"
 
 const Country = () => {
   return (
@@ -8,7 +8,7 @@ const Country = () => {
         <p><strong>Residence</strong></p>
       </div>
       <PublicOutlined className="icon"/>
-      <RadioButtonCheckedOutlined className="button--icon"/>
+      <RadioButtonUncheckedOutlined className="button--icon" fontSize="small"/>
     </div>
   )
 }
