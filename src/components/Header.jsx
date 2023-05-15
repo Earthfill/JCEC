@@ -5,7 +5,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
     <div className="header">
       <div className="header--header">
         <h1>My Skill Level</h1>
-        <p>Answer the following questions to begin your plan</p>
+        <p className="header--text">Answer the following questions to begin your plan</p>
       </div>
       {/* <button 
         onClick={toggleDarkMode}
@@ -14,7 +14,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button> */}
       <div className="header--button">
-        <span>{isDarkMode ? 'Select Light Mode' : 'Select Dark Mode'}</span>
+        <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
         <Switch 
           checked={isDarkMode} 
           onChange={toggleDarkMode}
