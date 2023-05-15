@@ -1,14 +1,17 @@
-import { Person2Outlined, RadioButtonCheckedOutlined } from "@mui/icons-material"
+import Address from "./fields/Address"
+import Country from "./fields/Country"
+import Location from "./fields/Location"
+import Name from "./fields/Name"
+import Telephone from "./fields/Telephone"
 
 const Field = () => {
   return (
-    <div>
-      <div className="field">
-        <h4>Your Name</h4>
-        <p>First, middle & Last name</p>
-      </div>
-      <Person2Outlined className="icon"/>
-      <RadioButtonCheckedOutlined className="button--icon"/>
+    <div className="field">
+      <Name />
+      <Location />
+      <Telephone />
+      <Address />
+      <Country />
     </div>
   )
 }

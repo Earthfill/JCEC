@@ -10,14 +10,30 @@ hr {
   background-color: rgba(71, 71, 71, 0.5);
 }
 
-.field {
+.name, .location, .telephone, .address, .country {
   display: inline-block;
   margin-right: 25px;
   text-align: right;
   flex: 3;
 }
 
-.field h4 {
+.location {
+  margin-left: 115px;
+}
+
+.telephone {
+  margin-left: 100px;
+}
+
+.address {
+  margin-left: 116px;
+}
+
+.country {
+  margin-left: 92px;
+}
+
+.name h4, .location h4, .telephone h4, .address h4, .country h4 {
   margin-bottom: -5px;
 }
 
