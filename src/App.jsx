@@ -1,10 +1,20 @@
+import { useState } from 'react'
 import Body from './components/Body'
 import Header from './components/Header'
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+  }
+
   return (
-    <div>
-      <Header />
+    <div className={isDarkMode ? 'dark--mode' : 'light--mode'}>
+      <Header 
+        toggleDarkMode={toggleDarkMode} 
+        isDarkMode={isDarkMode}  
+      />
       <Body />
     </div>
   )
