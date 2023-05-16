@@ -4,7 +4,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div className="header">
       <div className="header--header">
-        <h1>My Skill Level (Desktop view only)</h1>
+        <h1>My Skill Level</h1>
         <p className="header--text">Answer the following questions to begin your plan</p>
       </div>
       {/* <button 
@@ -18,6 +18,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         <Switch 
           checked={isDarkMode} 
           onChange={toggleDarkMode}
+          className="header--switch"
         />
       </div>
       <hr />
