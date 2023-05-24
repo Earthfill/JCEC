@@ -26,11 +26,11 @@
 
 .header--button {
   display: inline;
-  position: absolute;
-  left: 1300px;
-  top: 128px;
+  position: relative;
+  left: 500px;
+  /* top: 5px; */
   border-radius: 50px;
-  padding: 0 15px;
+  padding: 5px 3px 10px 12px;
 }
 
 .dark--mode .header--button {
@@ -223,4 +223,46 @@
 
 .light--mode .input--form--button {
   border: none;
+}
+
+.login {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.login--field {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.login--input {
+  border: 1px solid aqua;
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  background-color: #010843;
+  color: #fff;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.login--input::placeholder {
+  color: rgba(114, 114, 114, 0.75);
+  padding-left: 5px;
+}
+
+.log--button, .logout--button {
+  border-radius: 25px;
+  background-color: aqua;
+  font-weight: 800;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.logout--button {
+  position: relative;
+  left: 650px;
+  bottom: 115px;
 }
