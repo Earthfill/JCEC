@@ -1,4 +1,9 @@
+import { useState } from "react";
+import ModalFinish from "./ModalFinish"
+
 const InputField = ({ handleNextStep, handlePreviousStep, currentStep, isNextSStepClicked }) => {
+  const [isModalClicked, setIsModalClicked] = useState(false);
+
   return (
     <div className="inputfield">
       <div className="inputfield--header">
@@ -56,8 +61,10 @@ const InputField = ({ handleNextStep, handlePreviousStep, currentStep, isNextSSt
       <form className="form">
         <p>Enter your country of residence here</p>
         <input className="input--form"/>
+        {!isModalClicked && (
         <button className="input--form--prev--button" onClick={handlePreviousStep}>PREVIOUS STEP</button>
-        <button className="input--form--button" onClick={handleNextStep}>NEXT STEP</button>
+        )}
+        <ModalFinish setIsModalClicked={setIsModalClicked} />
       </form>
       )}
     </div>

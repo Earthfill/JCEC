@@ -220,11 +220,21 @@
   position: absolute;
   margin-top: 20px;
   left: 1010px;
-  /* top: 500px; */
 }
 
 .light--mode .input--form--button {
   border: none;
+}
+
+.input--form--button--modal {
+  border-radius: 25px;
+  background-color: aqua;
+  font-weight: 800;
+  padding: 15px 40px;
+  cursor: pointer;
+  position: absolute;
+  left: 1010px;
+  bottom: 260px;
 }
 
 .input--form--prev--button {
@@ -310,4 +320,14 @@
 .light--mode .login--header--button {
   border: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal--popup {
+  transform: translate(175%, 250%) scale(1.5);
+  box-shadow: 0 0 0.5px #fff;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  backdrop-filter: blur(100%);
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
 }
