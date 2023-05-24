@@ -216,11 +216,27 @@
   background-color: aqua;
   font-weight: 800;
   padding: 15px 40px;
-  margin: 20px 0 0 545px;
   cursor: pointer;
+  position: absolute;
+  margin-top: 20px;
+  left: 1010px;
+  /* top: 500px; */
 }
 
 .light--mode .input--form--button {
+  border: none;
+}
+
+.input--form--prev--button {
+  border-radius: 25px;
+  background-color: aqua;
+  font-weight: 800;
+  padding: 15px 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.light--mode .input--form--prev--button {
   border: none;
 }
 
