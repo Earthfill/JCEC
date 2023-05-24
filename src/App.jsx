@@ -9,6 +9,7 @@ function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showHint, setShowHint] = useState(false)
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
@@ -16,10 +17,12 @@ function App() {
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
+    setShowHint(false)
   };
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+    setShowHint(false)
   };
 
   const handleLogin = (event) => {
@@ -28,7 +31,9 @@ function App() {
     if (username === 'jecetech' && password === '1234') {
       setIsLoggedIn(true)
     } else {
-      alert('Invalid username or password')
+      setUsername('')
+      setPassword('')
+      setShowHint(true)
     }
   }
 
@@ -48,6 +53,9 @@ function App() {
           handleLogout={handleLogout}
           username={username}
           password={password}
+          showHint={showHint}
+          isDarkMode={isDarkMode}
+          toggleDarkMode={toggleDarkMode}
       />
       </div>
     )
